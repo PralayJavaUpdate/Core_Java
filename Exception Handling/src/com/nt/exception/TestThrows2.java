@@ -9,12 +9,16 @@ class F{
 	}
 }
 	public class TestThrows2 extends C {
+		TestThrows2(){
+			m1();
+		}
 		 void m1(){
 			 try{
 				 F.m2();
 			 }
 			 catch(ClassNotFoundException cnf){}
 		 }
+		// m1();
 		public static void main(String[] args){
 				System.out.println("Hello");
 				

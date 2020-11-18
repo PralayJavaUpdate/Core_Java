@@ -4,7 +4,9 @@ public class MyThread extends Thread {
 	MyThread() {
 		super();
 	}
-	
+	MyThread(String name){
+		super(name);
+	}
 	MyThread(Runnable target){
 		super(target);
 	}
